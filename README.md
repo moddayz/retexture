@@ -4,7 +4,7 @@
 how to retexture:
 1. Download the desired folder.
 2. rename the folder from "_new1" to (any name for example "_arrow")
-3. if you use mykero inside $PBOPREFIX$.txt, also rename the path.
+3. if you use Mikero inside $PBOPREFIX$.txt, also rename the path.
 4. Open config.cpp with notepad and rename "_new1" to "_arrow" for example
 5. open 4_World\helicopter.c and also change "_new1" to for example "_arrow"
 6. open the data folder, look for files such as _new1.paa (and the same name but without _new1)
@@ -23,7 +23,7 @@ how to retexture:
 как сделать ретекстур:
 1. Скачиваете нужную папку.
 2. переименуете папку с "_new1" на (любое имя например "_arrow"
-3. если используете микеро в нутри $PBOPREFIX$.txt так же переименовываете путь.
+3. если используете Mikero в нутри $PBOPREFIX$.txt так же переименовываете путь.
 4. Открываете блокнотом config.cpp и функцией автозамена переименуете "_new1" на например "_arrow"
 5. открываете 4_World\helicopter.c и так же перемиеновываете  "_new1" на например "_arrow"
 6. открываете папку data ищете файлы например _new1.paa (и таке же имя но без _new1 
