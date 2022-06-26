@@ -97,6 +97,12 @@ class CfgVehicles
 		displayName="black hawk";
 		hiddenSelections[] = {"camo0","camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_black-hawk_new1\data\hawk_new1.paa","HelicopterSIB_black-hawk_new1\data\8_new1.paa","HelicopterSIB_black-hawk_new1\data\11_new1.paa","HelicopterSIB_black-hawk_new1\data\28_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,70};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 	class Heliblack_hawk_SIB_new1_clear: Heliblack_hawk_SIB_clear
 	{
@@ -104,6 +110,12 @@ class CfgVehicles
 		displayName="black hawk";
 		hiddenSelections[] = {"camo0","camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_black-hawk_new1\data\hawk_new1.paa","HelicopterSIB_black-hawk_new1\data\8_new1.paa","HelicopterSIB_black-hawk_new1\data\11_new1.paa","HelicopterSIB_black-hawk_new1\data\28_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,70};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 };
 	

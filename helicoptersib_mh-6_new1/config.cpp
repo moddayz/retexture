@@ -70,7 +70,12 @@ class CfgVehicles
 		descriptionShort="MH6";
 		hiddenSelections[] = {"camo0"};
 		hiddenSelectionsTextures[] ={"helicoptersib_mh-6_new1\data\ah6ext_d_new1.paa"};
-		
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,30};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 	class HeliMH6_SIB_new1_clear: HeliMH6_SIB_clear
 	{
@@ -79,6 +84,12 @@ class CfgVehicles
 		descriptionShort="MH6";
 		hiddenSelections[] = {"camo0"};
 		hiddenSelectionsTextures[] ={"helicoptersib_mh-6_new1\data\ah6ext_d_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,30};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 };
 	

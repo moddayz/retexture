@@ -70,6 +70,12 @@ class CfgVehicles
 		displayName="hommade";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_Hommade_new1\data\light_helicopter_main_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,10};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 	class HeliSIB_hommade_new1_clear: HeliSIB_hommade_clear
 	{
@@ -77,5 +83,11 @@ class CfgVehicles
 		displayName="hommade";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_Hommade_new1\data\light_helicopter_main_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,10};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 };

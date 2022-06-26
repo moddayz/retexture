@@ -97,11 +97,23 @@ class CfgVehicles
 	{
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_police_new1\data\Helicopter_Police_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,50};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 
 	class Helipolice_SIB4_new1_clear: Helipolice_SIB4_clear
 	{
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_police_new1\data\Helicopter_Police_new1.paa"};
+		class Cargo 
+		{
+			itemsCargoSize[] = {10,50};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
 	};
 };
