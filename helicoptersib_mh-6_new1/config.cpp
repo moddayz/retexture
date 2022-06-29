@@ -35,7 +35,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"HelicopterSIB_MH-6/4_World/"
+					"helicoptersib_mh-6_new1/4_World/"
 				};
 			};
 			class gameScriptModule
@@ -43,7 +43,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"HelicopterSIB_MH-6/3_Game/"
+					"helicoptersib_mh-6_new1/3_Game/"
 				};
 			};
 			class missionScriptModule
@@ -51,7 +51,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"HelicopterSIB_MH-6/5_Mission/"
+					"helicoptersib_mh-6_new1/5_Mission/"
 				};
 			};
 		};
