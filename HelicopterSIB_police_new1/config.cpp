@@ -95,6 +95,31 @@ class CfgVehicles
 	
 	class Helipolice_SIB4_new1: Helipolice_SIB4
 	{
+		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","SIBPolice_Door_1_1","SIBPolice_Door_1_2","SIBPolice_Door_2_1","SIBPolice_Door_2_2","Reflector_1_1","Reflector_2_1","CarBattery"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Chassis
+			{
+				name = "$STR_attachment_Chassis0";
+				description = "";
+				icon = "cat_vehicle_chassis";
+				attachmentSlots[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2"};
+			};
+			class Body
+			{
+				name = "$STR_attachment_Body0";
+				description = "";
+				icon="cat_vehicle_body";
+				attachmentSlots[] = {"SIBPolice_Door_1_1","SIBPolice_Door_1_2","SIBPolice_Door_2_1","SIBPolice_Door_2_2","Reflector_1_1","Reflector_2_1"};
+			};
+			class Engine
+			{
+				name = "$STR_attachment_Engine0";
+				description = "";
+				attachmentSlots[] = {"CarBattery"};
+				icon = "cat_vehicle_engine";
+			};
+		};
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_police_new1\data\Helicopter_Police_new1.paa"};
 		class Cargo 
