@@ -1,0 +1,97 @@
+class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 1000;
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
+				};
+			};
+			class DamageZones
+			{
+				class Body
+				{
+					fatalInjuryCoef = 0.001;
+					memoryPoints[] = {"dmgzone_body"};
+					componentNames[] = {"dmgzone_body"};
+					class Health
+					{
+						hitpoints = 6000;
+						transferToGlobalCoef = 0.001;
+					};
+					transferToZonesNames[] = {};
+					inventorySlots[] = {};
+				};
+				class Chassis
+				{
+					fatalInjuryCoef = -1;
+					memoryPoints[] = {"dmgzone_chassis"};
+					componentNames[] = {"dmgzone_chassis"};
+					class Health
+					{
+						hitpoints = 3000;
+						transferToGlobalCoef = 0;
+					};
+					inventorySlots[] = {};
+					inventorySlotsCoefs[] = {};
+				};
+				class Engine
+				{
+					fatalInjuryCoef = -1;
+					memoryPoints[] = {"dmgzone_engine"};
+					componentNames[] = {"dmgzone_engine"};
+					class Health
+					{
+						hitpoints = 3000;
+						transferToGlobalCoef = 0;
+					};
+					transferToZonesNames[] = {};
+					inventorySlots[] = {"CarBattery","CarRadiator"};
+					inventorySlotsCoefs[] = {0.2,0.4};
+				};
+				class Fuel
+				{
+					fatalInjuryCoef = -1;
+					componentNames[] = {"dmgzone_fuel"};
+					memoryPoints[] = {"dmgzone_fuel"};
+					class Health
+					{
+						hitpoints = 700;
+						transferToGlobalCoef = 0;
+					};
+					transferToZonesNames[] = {};
+					inventorySlotsCoefs[] = {};
+					inventorySlots[] = {};
+				};
+				class Rotor1
+				{
+					fatalInjuryCoef = -1;
+					memoryPoints[] = {"dmgzone_rotor1"};
+					componentNames[] = {"dmgzone_rotor1"};
+					class Health
+					{
+						hitpoints = 2000;
+						transferToGlobalCoef = 0;
+					};
+					transferToZonesNames[] = {};
+					inventorySlots[] = {};
+					inventorySlotsCoefs[] = {};
+				};
+				class Rotor2
+				{
+					fatalInjuryCoef = -1;
+					memoryPoints[] = {"dmgzone_rotor2"};
+					componentNames[] = {"dmgzone_rotor2"};
+					class Health
+					{
+						hitpoints = 2000;
+						transferToGlobalCoef = 0;
+					};
+					transferToZonesNames[] = {};
+					inventorySlots[] = {};
+					inventorySlotsCoefs[] = {};
+				};
+			};
+		};
+		
