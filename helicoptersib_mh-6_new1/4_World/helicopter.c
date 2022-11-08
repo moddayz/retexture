@@ -11,6 +11,7 @@ class HeliMH6_SIB_new1 extends HeliMH6_SIB
 		c_engineSound = "HelicopterEngine_SoundSets_MH6";
 		c_rotorSound = "HelicopterRotor_SoundSets_MH6";
 	}
+	
 	override void creat_InInventory_heli()
 	{
 		if(IsKindOf("HeliMH6_SIB_new1"))
