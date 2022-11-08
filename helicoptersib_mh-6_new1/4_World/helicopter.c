@@ -10,7 +10,6 @@ class HeliMH6_SIB_new1 extends HeliMH6_SIB
 		c_stopSound = "HelicopterStop_SoundSets_MH6";
 		c_engineSound = "HelicopterEngine_SoundSets_MH6";
 		c_rotorSound = "HelicopterRotor_SoundSets_MH6";
-		c_fuelDistance = 12;
 	}
 	override void creat_InInventory_heli()
 	{
