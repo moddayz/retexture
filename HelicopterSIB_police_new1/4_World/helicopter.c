@@ -7,6 +7,14 @@ class SIBPolice_Door_2_2_new1 extends SIBPolice_Door_2_2 {};
 
 class Helipolice_SIB4_new1 extends Helipolice_SIB4
 {
+	override void EEInit()
+	{
+		super.EEInit();
+		c_startSound = "HelicopterStart_SoundSets_police";
+		c_stopSound = "HelicopterStop_SoundSets_police";
+		c_engineSound = "HelicopterEngine_SoundSets_polices";
+		c_rotorSound = "HelicopterRotor_SoundSets_police";
+	}
 	override void creat_InInventory_heli()
 	{
 		if(IsKindOf("Helipolice_SIB4_new1"))
