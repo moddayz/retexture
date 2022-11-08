@@ -7,6 +7,16 @@ class SIBUH1D_Door_2_2_new1 extends SIBUH1D_Door_2_2 {};
 
 class HeliSIB_UH1D_new1 extends HeliSIB_UH1D
 {
+	override void EEInit()
+	{
+		super.EEInit();
+		c_startSound = "Helicopter_UH1D_Start_SoundSets";
+		c_stopSound = "Helicopter_UH1D_Stop_SoundSets";
+		c_rotorSound = "Helicopter_UH1D_Rotor_SoundSets";
+		c_engineSound = "Helicopter_UH1D_Engine_SoundSets";
+		c_warningSound = "Helicopter_UH1D_Warning_SoundSets";
+		c_crashSound = "Helicopter_UH1D_Crash_SoundSets";
+	}
 	override void creat_InInventory_heli()
 	{
 		if(IsKindOf("HeliSIB_UH1D_new1"))
