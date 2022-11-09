@@ -10,10 +10,12 @@ class Helipolice_SIB4_new1 extends Helipolice_SIB4
 	override void EEInit()
 	{
 		super.EEInit();
-		c_startSound = "HelicopterStart_SoundSets_police";
-		c_stopSound = "HelicopterStop_SoundSets_police";
-		c_engineSound = "HelicopterEngine_SoundSets_polices";
-		c_rotorSound = "HelicopterRotor_SoundSets_police";
+		c_startSound = "HelicopterStart_SoundSets_police";//Heli_police_start_SoundShaders
+		c_stopSound = "HelicopterStop_SoundSets_police";//Heli_police_stop_SoundShaders
+		c_engineSound = "HelicopterEngine_SoundSets_polices";//Heli_police_engine_SoundShaders
+		c_rotorSound = "HelicopterRotor_SoundSets_police";//Heli_police_rotor_SoundShaders
+		c_warningSound = "HelicopterWarning_SoundSets";//Heli_police_warning_SoundShaders
+		c_crashSound = "HelicopterCrash_SoundSets";//Heli_police_police_crash_SoundShaders
 	}
 	override void creat_InInventory_heli()
 	{
