@@ -7,7 +7,7 @@ class SIBblack_hawk_Door_2_2_new1 extends SIBblack_hawk_Door_2_2 {};
 
 class Heliblack_hawk_SIB_new1 extends Heliblack_hawk_SIB
 {
-override void EEInit()
+	override void EEInit()
 	{
 		super.EEInit();
 		c_startSound = "HelicopterStart_SoundSets";
