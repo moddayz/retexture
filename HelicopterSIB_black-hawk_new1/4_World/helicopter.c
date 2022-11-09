@@ -10,12 +10,12 @@ class Heliblack_hawk_SIB_new1 extends Heliblack_hawk_SIB
 	override void EEInit()
 	{
 		super.EEInit();
-		c_startSound = "HelicopterStart_SoundSets";
-		c_stopSound = "HelicopterStop_SoundSets";
-		c_rotorSound = "HelicopterRotor_SoundSets";
-		c_engineSound = "HelicopterEngine_SoundSets";
-		c_warningSound = "HelicopterWarning_SoundSets";
-		c_crashSound = "HelicopterCrash_SoundSets";
+		c_startSound = "HelicopterStart_SoundSets"; // Heli_start_SoundShaders
+		c_stopSound = "HelicopterStop_SoundSets"; //Heli_stop_SoundShaders
+		c_rotorSound = "HelicopterRotor_SoundSets"; //Heli_rotor_SoundShaders
+		c_engineSound = "HelicopterEngine_SoundSets"; //Heli_engine_SoundShaders
+		c_warningSound = "HelicopterWarning_SoundSets"; //Heli_warning_SoundShaders
+		c_crashSound = "HelicopterCrash_SoundSets"; //Heli_crash_SoundShaders
 	}
 
 	override void creat_InInventory_heli()
