@@ -10,12 +10,12 @@ class HeliSIB_UH1D_new1 extends HeliSIB_UH1D
 	override void EEInit()
 	{
 		super.EEInit();
-		c_startSound = "Helicopter_UH1D_Start_SoundSets";
-		c_stopSound = "Helicopter_UH1D_Stop_SoundSets";
-		c_rotorSound = "Helicopter_UH1D_Rotor_SoundSets";
-		c_engineSound = "Helicopter_UH1D_Engine_SoundSets";
-		c_warningSound = "Helicopter_UH1D_Warning_SoundSets";
-		c_crashSound = "Helicopter_UH1D_Crash_SoundSets";
+		c_startSound = "Helicopter_UH1D_Start_SoundSets";//Heli_UH1D_start_SoundShaders
+		c_stopSound = "Helicopter_UH1D_Stop_SoundSets";//Heli_UH1D_stop_SoundShaders
+		c_rotorSound = "Helicopter_UH1D_Rotor_SoundSets";//Heli_UH1D_rotor_SoundShaders
+		c_engineSound = "Helicopter_UH1D_Engine_SoundSets";//Heli_UH1D_engine_SoundShaders1
+		c_warningSound = "Helicopter_UH1D_Warning_SoundSets";//Heli_UH1D_warning_SoundShaders
+		c_crashSound = "Helicopter_UH1D_Crash_SoundSets";//Heli_UH1D_crash_SoundShaders
 	}
 	override void creat_InInventory_heli()
 	{
