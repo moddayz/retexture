@@ -95,7 +95,7 @@ class CfgVehicles
 	
 	class Helipolice_SIB4_new1: Helipolice_SIB4
 	{
-		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","SIBPolice_Door_1_1","SIBPolice_Door_1_2","SIBPolice_Door_2_1","SIBPolice_Door_2_2","Reflector_1_1","Reflector_2_1","CarBattery"};
+		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","SIBPolice_Door_1_1","SIBPolice_Door_1_2","SIBPolice_Door_2_1","SIBPolice_Door_2_2","Reflector_1_1","Reflector_2_1","CarBattery","SIBPolice_blade1","SIBPolice_blade2","SIBPolice_blade3","SIBPolice_blade4","SIBPolice_bladem1","SIBPolice_bladem2"};
 		class GUIInventoryAttachmentsProps
 		{
 			class Chassis
