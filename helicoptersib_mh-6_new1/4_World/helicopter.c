@@ -3,6 +3,17 @@
 
 class HeliMH6_SIB_new1 extends HeliMH6_SIB
 {
+	override void EEInit()
+	{
+		super.EEInit();
+		c_startSound = "HelicopterStart_SoundSets_MH6";//Heli_MH6_start_SoundShaders
+		c_stopSound = "HelicopterStop_SoundSets_MH6";//Heli_MH6_stop_SoundShaders
+		c_engineSound = "HelicopterEngine_SoundSets_MH6";//Heli_MH6_engine_SoundShaders
+		c_rotorSound = "HelicopterRotor_SoundSets_MH6";//Heli_MH6_rotor_SoundShaders
+		c_warningSound = "HelicopterWarning_SoundSets";//Heli_MH6_warning_SoundShaders
+		c_crashSound = "HelicopterCrash_SoundSets";//Heli_MH6_crash_SoundShaders
+	}
+	
 	override void creat_InInventory_heli()
 	{
 		if(IsKindOf("HeliMH6_SIB_new1"))
