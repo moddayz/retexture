@@ -158,4 +158,5 @@ class CfgVehicles
 			openable = 0;
 		};
 	};
+	};
 };
