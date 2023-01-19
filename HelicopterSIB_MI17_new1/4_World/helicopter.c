@@ -8,8 +8,8 @@ class HeliMI17_SIB_new1 extends HeliMI17_SIB
 	{
 		if(IsKindOf("HeliMI17_SIB_new1"))
 		{			
-			GetInventory().CreateInInventory( "MI17_doors_cargo1" );
-			GetInventory().CreateInInventory( "MI17_doors_cargo2" );
+			GetInventory().CreateInInventory( "MI17_doors_cargo1_new1" );
+			GetInventory().CreateInInventory( "MI17_doors_cargo2_new1" );
 			GetInventory().CreateInInventory( "MI17_Door_1_1_new1" );
 			GetInventory().CreateInInventory( "MI17_lesnica" );
 

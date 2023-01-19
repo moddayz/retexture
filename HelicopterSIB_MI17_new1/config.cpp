@@ -64,10 +64,22 @@ class CfgMods
 class CfgVehicles
 {
 	class MI17_Door_1_1;
+	class MI17_doors_cargo1;
+	class MI17_doors_cargo2;
+	class MI17_doors_cargo1_new1: MI17_doors_cargo1
+	{
+		hiddenSelections[] = {"camo1_door","camo2_door","camo3_door"};
+		hiddenSelectionsTextures[] ={"HelicopterSIB_MI17_new1\data\fuselage_1_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\fuselage_2_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\landing_tra_co_new1.paa"};
+	};
+	class MI17_doors_cargo2_new1: MI17_doors_cargo2
+	{
+		hiddenSelections[] = {"camo1_door","camo2_door","camo3_door"};
+		hiddenSelectionsTextures[] ={"HelicopterSIB_MI17_new1\data\fuselage_1_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\fuselage_2_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\landing_tra_co_new1.paa"};
+	};
 	class MI17_Door_1_1_new1: MI17_Door_1_1
 	{
-		hiddenSelections[] = {"camo1_door","camo2_door"};
-		hiddenSelectionsTextures[] ={"HelicopterSIB_MI17_new1\data\fuselage_1_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\fuselage_2_tra_co_new1.paa"};
+		hiddenSelections[] = {"camo1_door","camo2_door","camo3_door"};
+		hiddenSelectionsTextures[] ={"HelicopterSIB_MI17_new1\data\fuselage_1_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\fuselage_2_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\landing_tra_co_new1.paa"};
 	};
 	class HeliMI17_SIB;
 	class HeliMI17_SIB_clear;
@@ -80,7 +92,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
 		hiddenSelectionsTextures[] ={"HelicopterSIB_MI17_new1\data\fuselage_1_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\fuselage_2_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\landing_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\Interior_1_Tra_co_new1.paa","HelicopterSIB_MI17_new1\data\Interior_2_Tra_co_new1.paa"};
 		
-		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","MI17_Door_1_1","Reflector_1_1","Reflector_2_1","CarBattery","MI17_blade1","MI17_blade2","MI17_blade3","MI17_blade4","MI17_blade5","MI17_bladem1","MI17_bladem2","MI17_bladem3","MI17_lesnica"};
+		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","MI17_Door_1_1","MI17_doors_cargo1","MI17_doors_cargo2","Reflector_1_1","Reflector_2_1","CarBattery","MI17_blade1","MI17_blade2","MI17_blade3","MI17_blade4","MI17_blade5","MI17_bladem1","MI17_bladem2","MI17_bladem3","MI17_lesnica"};
 		class GUIInventoryAttachmentsProps
 		{
 			class Chassis
@@ -121,7 +133,7 @@ class CfgVehicles
 			hiddenSelections[] = {"camo1","camo2","camo3"};
 			hiddenSelectionsTextures[] ={"HelicopterSIB_MI17_new1\data\fuselage_1_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\fuselage_2_tra_co_new1.paa","HelicopterSIB_MI17_new1\data\landing_tra_co_new1.paa"};
 		
-			attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","MI17_Door_1_1","Reflector_1_1","Reflector_2_1","CarBattery","MI17_blade1","MI17_blade2","MI17_blade3","MI17_blade4","MI17_blade5","MI17_bladem1","MI17_bladem2","MI17_bladem3","MI17_lesnica"};
+			attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","MI17_Door_1_1","MI17_doors_cargo1","MI17_doors_cargo2","Reflector_1_1","Reflector_2_1","CarBattery","MI17_blade1","MI17_blade2","MI17_blade3","MI17_blade4","MI17_blade5","MI17_bladem1","MI17_bladem2","MI17_bladem3","MI17_lesnica"};
 			class GUIInventoryAttachmentsProps
 			{
 				class Chassis
