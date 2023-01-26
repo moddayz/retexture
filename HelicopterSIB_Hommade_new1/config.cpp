@@ -69,7 +69,7 @@ class CfgVehicles
 		scope=2;
 		displayName="hommade";
 		hiddenSelections[] = {"camo1"};
-		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","CarBattery","CarRadiator","hommade_blade1","hommade_blade2","hommade_bladem1","hommade_bladem2","Reflector_1_1","Reflector_2_1"};
+		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","CarBattery","CarRadiator","SIBMH6_blade1","SIBMH6_blade2","SIBMH6_blade3","SIBMH6_blade4","Reflector_1_1","Reflector_2_1"};
 		
 		hiddenSelectionsTextures[] ={"HelicopterSIB_Hommade_new1\data\light_helicopter_main_new1.paa"};
 		class Cargo 
