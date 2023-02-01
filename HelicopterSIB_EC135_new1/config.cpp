@@ -167,9 +167,9 @@ class CfgVehicles
 					icon = "cat_vehicle_engine";
 				};
 			};
-			hiddenSelections[] = {"camo1"};
-			hiddenSelectionsTextures[] ={"HelicopterSIB_EC135_new1\data\1_1_new1.paa"};
-			hiddenSelectionsMaterials[] = {"HelicopterSIB_EC135_new1\1_1_new1.rvmat"};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] ={"HelicopterSIB_EC135_new1\data\1_1_new1.paa"};
+		hiddenSelectionsMaterials[] = {"HelicopterSIB_EC135_new1\1_1_new1.rvmat"};
 			class Cargo 
 			{
 				itemsCargoSize[] = {10,100};

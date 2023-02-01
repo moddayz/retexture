@@ -142,7 +142,6 @@ class CfgVehicles
 			scope=2;
 			displayName="UH1D new1";
 			descriptionShort="";
-			
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] ={"HelicopterSIB_UH1D_new1\data\Uh-1h_bo_airforce_new1.paa","HelicopterSIB_UH1D_new1\data\Uh-1h_do_airforce_new1.paa"};
 			class Cargo 
