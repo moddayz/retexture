@@ -1,4 +1,286 @@
-class DamageSystem
+	class HeliTest_SIB: Heli_sib_cript
+	{
+		scope = 1;
+		fuelCapacity = 42;
+		fuelConsumption = 11;
+		class Crew: Crew
+		{
+			class Driver: Driver
+			{
+				isDriver = 0;
+			};
+			class CoDriver: CoDriver{};
+			class Cargo1
+			{
+				actionSel = "seat_cargo1";
+				proxyPos = "crewCargo1";
+				getInPos = "pos_cargo1";
+				getInDir = "pos_cargo1_dir";
+			};
+			class Cargo2
+			{
+				actionSel = "seat_cargo2";
+				proxyPos = "crewCargo2";
+				getInPos = "pos_cargo2";
+				getInDir = "pos_cargo2_dir";
+			};
+		};
+		class SimulationModule: SimulationModule
+		{
+			drive = "DRIVE_AWD";
+			airDragCoefficient = 0.995;
+			class Steering
+			{
+				increaseSpeed[] = {0,45,60,23,100,12};
+				decreaseSpeed[] = {0,80,60,40,90,20};
+				centeringSpeed[] = {0,0,15,25,60,40,100,60};
+			};
+			class Throttle
+			{
+				reactionTime = 1.0;
+				defaultThrust = 0.85;
+				gentleThrust = 0.7;
+				turboCoef = 4.0;
+				gentleCoef = 0.75;
+			};
+			braking[] = {0.0,0.1,1.0,0.8,2.5,0.9,3.0,1.0};
+			class Engine
+			{
+				inertia = 0.15;
+				torqueMax = 114;
+				torqueRpm = 3400;
+				powerMax = 53.7;
+				powerRpm = 5400;
+				rpmIdle = 850;
+				rpmMin = 900;
+				rpmClutch = 1350;
+				rpmRedline = 6000;
+				rpmMax = 8000;
+			};
+			class Gearbox
+			{
+				reverse = 3.526;
+				ratios[] = {3.667,2.1,1.361,1.0};
+				timeToUncoupleClutch = 0.3;
+				timeToCoupleClutch = 0.45;
+				maxClutchTorque = 260;
+			};
+			class Axles: Axles
+			{
+				class Front: Front
+				{
+					maxSteeringAngle = 30;
+					finalRatio = 4.1;
+					brakeBias = 0.6;
+					brakeForce = 4000;
+					wheelHubMass = 5;
+					wheelHubRadius = 0.15;
+					class Suspension
+					{
+						swayBar = 1700;
+						stiffness = 40000;
+						compression = 2100;
+						damping = 7500;
+						travelMaxUp = 0.0882;
+						travelMaxDown = 0.0833;
+					};
+					class Wheels: Wheels
+					{
+						class Left: Left
+						{
+							animDamper = "damper_1_1";
+							inventorySlot = "NivaWheel_1_1";
+						};
+						class Right: Right
+						{
+							animDamper = "damper_2_1";
+							inventorySlot = "NivaWheel_2_1";
+						};
+					};
+				};
+				class Rear: Rear
+				{
+					maxSteeringAngle = 0;
+					finalRatio = 4.1;
+					brakeBias = 0.4;
+					brakeForce = 3800;
+					wheelHubMass = 5;
+					wheelHubRadius = 0.15;
+					class Suspension
+					{
+						swayBar = 1800;
+						stiffness = 40000;
+						compression = 2200;
+						damping = 7600;
+						travelMaxUp = 0.1587;
+						travelMaxDown = 0.1059;
+					};
+					class Wheels: Wheels
+					{
+						class Left: Left
+						{
+							animDamper = "damper_1_2";
+							inventorySlot = "NivaWheel_1_2";
+						};
+						class Right: Right
+						{
+							animDamper = "damper_2_2";
+							inventorySlot = "NivaWheel_2_2";
+						};
+					};
+				};
+			};
+		};
+		class Cargo
+		{
+			itemsCargoSize[] = {10,100};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
+		class AnimationSources: AnimationSources
+		{
+			class DoorsCargo1
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class DoorsCargo2
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class damper_1_1
+			{
+				source = "user";
+				initPhase = 0.4857;
+				animPeriod = 1;
+			};
+			class damper_2_1: damper_1_1{};
+			class damper_1_2
+			{
+				source = "user";
+				initPhase = 0.4002;
+				animPeriod = 1;
+			};
+			class damper_2_2: damper_1_2{};
+			class hide_rotor
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class hide_start
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class toplivo
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class rezerv1
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class rezerv2
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class rezerv3
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class rot_h_start
+			{
+				source = "user";
+				initPhase = 1;
+				animPeriod = 0.5;
+			};
+			class rot2_h_start
+			{
+				source = "user";
+				initPhase = 1;
+				animPeriod = 0.5;
+			};
+			class rot_h_blur_end
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class rot2_h_blur_end
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class HorizonBankdetect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+			class HorizonDivedetect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+			class compassdetect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+			class rpmdetect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 3;
+			};
+			class toplivodetect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 2;
+			};
+			class visotadetect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+			class visota_num_detect
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+			class visota_num_detect2
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+			class speed
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.1;
+			};
+		};
+		class DamageSystem
 		{
 			class GlobalHealth
 			{
@@ -22,6 +304,7 @@ class DamageSystem
 					};
 					transferToZonesNames[] = {};
 					inventorySlots[] = {};
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
 				};
 				class Chassis
 				{
@@ -35,6 +318,7 @@ class DamageSystem
 					};
 					inventorySlots[] = {};
 					inventorySlotsCoefs[] = {};
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
 				};
 				class Engine
 				{
@@ -47,8 +331,9 @@ class DamageSystem
 						transferToGlobalCoef = 0;
 					};
 					transferToZonesNames[] = {};
-					inventorySlots[] = {"CarBattery","CarRadiator"};
-					inventorySlotsCoefs[] = {0.2,0.4};
+					inventorySlots[] = {};
+					inventorySlotsCoefs[] = {};
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
 				};
 				class Fuel
 				{
@@ -63,6 +348,7 @@ class DamageSystem
 					transferToZonesNames[] = {};
 					inventorySlotsCoefs[] = {};
 					inventorySlots[] = {};
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
 				};
 				class Rotor1
 				{
@@ -77,6 +363,7 @@ class DamageSystem
 					transferToZonesNames[] = {};
 					inventorySlots[] = {};
 					inventorySlotsCoefs[] = {};
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
 				};
 				class Rotor2
 				{
@@ -91,7 +378,46 @@ class DamageSystem
 					transferToZonesNames[] = {};
 					inventorySlots[] = {};
 					inventorySlotsCoefs[] = {};
+					healthLevels[] = {{1.0,{}},{0.7,{}},{0.5,{}},{0.3,{}},{0.0,{}}};
+				};				
+				class Proj
+				{
+					fatalInjuryCoef = -1;
+					componentNames[] = {"dmgzone_proj"};
+					memoryPoints[] = {"dmgzone_proj"};
+					class Health
+					{
+						hitpoints = 700;
+						transferToGlobalCoef = 0;
+					};
+					transferToZonesNames[] = {};
+					inventorySlotsCoefs[] = {};
+					inventorySlots[] = {"Reflector_1_1","Reflector_2_1"};
 				};
 			};
 		};
-		
+		class ObstacleGenerator
+		{
+			carve = 1;
+			timeToStationary = 5.0;
+			moveThreshold = 0.5;
+			class Shapes
+			{
+				class Cylindric
+				{
+					class Cyl1
+					{
+						radius = 1.0;
+						height = 1.5;
+						center[] = {0,0,0.7};
+					};
+					class Cyl3
+					{
+						radius = 1.0;
+						height = 1.5;
+						center[] = {0,0,-0.7};
+					};
+				};
+			};
+		};
+	};
