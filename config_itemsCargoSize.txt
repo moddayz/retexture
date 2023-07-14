@@ -1,0 +1,60 @@
+class CfgPatches
+{
+	class HelicopterModScriptsSIB_cargo
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"HelicopterModScriptsSIB"};
+	};
+};
+
+class CfgVehicles
+{
+	class HeliTest_SIB;
+	class HeliSIB_big: HeliTest_SIB
+	{
+		class Cargo
+		{
+			itemsCargoSize[] = {10,100};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
+	};
+	class HeliSIB_middle: HeliTest_SIB
+	{
+		class Cargo
+		{
+			itemsCargoSize[] = {10,80};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
+	};
+	class HeliSIB_little: HeliTest_SIB
+	{
+		class Cargo
+		{
+			itemsCargoSize[] = {10,50};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
+	};
+	class HeliSIB_minimal: HeliTest_SIB
+	{
+		class Cargo
+		{
+			itemsCargoSize[] = {10,10};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
+	};
+	class HeliSIB_none: HeliTest_SIB
+	{
+		class Cargo
+		{
+			itemsCargoSize[] = {0,0};
+			allowOwnedCargoManipulation = 1;
+			openable = 0;
+		};
+	};
+};
