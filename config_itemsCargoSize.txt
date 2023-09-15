@@ -11,6 +11,22 @@ class CfgPatches
 
 class CfgVehicles
 {
+
+//	class Inventory_Base;
+//	class RGD5Grenade;
+//	class CarDoor;
+//	class SIB_blade: Inventory_Base
+//	class Sib_heliDoor: CarDoor
+//	class RGD5Grenade_sib: RGD5Grenade
+//	class CarScript;
+//	class Heli_sib_cript: CarScript
+//	class HeliTest_SIB: Heli_sib_cript
+//	class HeliSIB_big: HeliTest_SIB
+//	class HeliSIB_middle: HeliTest_SIB
+//	class HeliSIB_little: HeliTest_SIB
+//	class HeliSIB_minimal: HeliTest_SIB
+//	class HeliSIB_none: HeliTest_SIB
+
 	class HeliTest_SIB;
 	class HeliSIB_big: HeliTest_SIB // MI17
 	{
