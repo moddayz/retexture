@@ -1,0 +1,19 @@
+
+//HelicopterModSERVER
+
+modded class Action_Helicopter_Start_Engine_Keyboard_SIB
+{
+	override void StartEngineSIB(HeliTest_SIB heli)
+	{
+		heli.SetAnimationPhase("hide_start", 1.0);
+		heli.OnEngineStart();
+	}
+};
+modded class Action_Helicopter_Start_Engine_Mouse_SIB
+{
+	override void StartEngineSIB(HeliTest_SIB heli)
+	{
+		heli.SetAnimationPhase("hide_start", 1.0);
+		heli.OnEngineStart();
+	}
+};
