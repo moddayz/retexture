@@ -127,6 +127,7 @@ class CfgVehicles
 					attachmentSlots[] = {"CarBattery","SIBUH1D_blade1","SIBUH1D_blade2","SIBUH1D_bladem1","SIBUH1D_bladem2"};
 					icon = "cat_vehicle_engine";
 				};
+                        };
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] ={"HelicopterSIB_UH1D_new1\data\Uh-1h_bo_airforce_new1.paa","HelicopterSIB_UH1D_new1\data\Uh-1h_do_airforce_new1.paa"};
 			class Cargo 
