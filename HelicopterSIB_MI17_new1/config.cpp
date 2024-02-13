@@ -116,13 +116,13 @@ class CfgVehicles
 				attachmentSlots[] = {"CarBattery","MI17_blade1","MI17_blade2","MI17_blade3","MI17_blade4","MI17_blade5","MI17_bladem1","MI17_bladem2","MI17_bladem3"};
 				icon = "set:dayz_inventory image:cat_vehicle_engine";
 			};
+		};
 			class Cargo 
 			{
 				itemsCargoSize[] = {10,100};
 				allowOwnedCargoManipulation = 1;
 				openable = 0;
 			};
-		};
 	};
 		class HeliMI17_SIB_new1_clear: HeliMI17_SIB_clear
 		{
