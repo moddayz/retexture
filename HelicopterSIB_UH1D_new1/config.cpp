@@ -136,8 +136,8 @@ class CfgVehicles
 				allowOwnedCargoManipulation = 1;
 				openable = 0;
 			};
-		};
 	};
+	
 		class HeliSIB_UH1D_new1_clear: HeliSIB_UH1D_clear
 		{
 			scope=2;
