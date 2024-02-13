@@ -116,7 +116,7 @@ class CfgVehicles
 			{
 				name = "$STR_attachment_Engine0";
 				description = "";
-				attachmentSlots[] = {"CarBattery"};
+				attachmentSlots[] = {"CarBattery","SIBPolice_blade1","SIBPolice_blade2","SIBPolice_blade3","SIBPolice_blade4","SIBPolice_bladem1","SIBPolice_bladem2"};
 				icon = "cat_vehicle_engine";
 			};
 		};
