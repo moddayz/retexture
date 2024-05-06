@@ -41,5 +41,5 @@ class HeliSIB_EC135_new1 extends Heliec135_SIB
 		super.creat_InInventory_heli();
 	};
 };
-class HeliSIB_EC135_new1_clear extends Heliec135_SIB_clear {};
+//class HeliSIB_EC135_new1_clear extends Heliec135_SIB_clear {};
 
