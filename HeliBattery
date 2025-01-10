@@ -1,0 +1,22 @@
+modded class HeliTest_SIB
+{
+
+  override bool CanReceiveAttachment(EntityAI attachment, int slotId)
+  {
+  // Получаем идентификатор слота CarBattery
+  const int SLOT_CARBATTERY = InventorySlots.GetSlotIdFromString("CarBattery");
+  
+  // Проверяем, что слот совпадает с CarBattery
+  if (slotId == SLOT_CARBATTERY)
+  {
+  // Разрешаем установку только HeliBattery
+  if (attachment && attachment.IsKindOf("HeliBattery"))
+  {
+  return true;
+  }
+  return false; // Запрещаем все остальные предметы
+  }
+  // Для остальных слотов используется стандартная логика
+  return super.CanReceiveAttachment(attachment, slotId);
+  }
+}
