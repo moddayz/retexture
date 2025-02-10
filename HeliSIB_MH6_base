@@ -1,3 +1,4 @@
+#ifdef PersonVehiclesib
 class HeliSIB_MH6_base: HeliSIB_little
 	{
 		scope=1;
@@ -164,6 +165,6 @@ class HeliSIB_MH6_base: HeliSIB_little
 			
 		};
 
-	
+#endif
 	};
 	
