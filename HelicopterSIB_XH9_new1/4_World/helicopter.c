@@ -30,3 +30,4 @@ class HeliXH9_SIB_new1 extends HeliXH9_SIB
 		super.creat_InInventory_heli();
 	};
 };
+class HeliXH9_SIB_clear_new1 extends HeliXH9_SIB_clear{};
